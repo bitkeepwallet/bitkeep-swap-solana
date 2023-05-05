@@ -1,0 +1,25 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+bkswap = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+
+[programs.devnet]
+bkswap = "5oah7zWWknX7KjWHDZrca9f53HX5WxNUp3y9p6gJMyU3"
+raydium_router = "2avzgAzGDza8BB4DRzVMhSus5FsyTux3Bqyo6Mrqto9T"
+raydium_test_helper = "71Lq4vbeFA9eicHkADR1BX3Go9EvjRYY2vWoQQ89wf2z"
+
+[programs.mainnet]
+bkswap = "2avRnwrjSBU4NAmThSa3nKvzp2E3AwqAfxH8rKrDTRdw"
+raydium_router = "6pkZsnJDTB5P7VdxThWiFtJjyRS9SvgfUwCkaauK4oXb"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "mainnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json --bail -t 1000000 tests/**/*.ts"
