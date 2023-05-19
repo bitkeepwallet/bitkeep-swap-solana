@@ -4,6 +4,7 @@ use instructions::*;
 pub mod instructions;
 mod consts;
 mod state;
+mod errors;
 
 declare_id!("2avRnwrjSBU4NAmThSa3nKvzp2E3AwqAfxH8rKrDTRdw");
 
@@ -39,5 +40,9 @@ pub mod bkswap {
 
     pub fn set_fee_rate(ctx: Context<SetFeeRate>, fee_rate: u16) -> Result<()> {
         instructions::set_fee_rate(ctx, fee_rate)
+    }
+
+    pub fn set_is_paused(ctx: Context<SetIsPaused>, is_paused: bool) -> Result<()> {
+        instructions::set_is_paused(ctx, is_paused)
     }
 }
