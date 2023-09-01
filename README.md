@@ -1,7 +1,21 @@
-# Overview 
+# BitKeep Swap Solana 
 
-Rust API to Raydium on chain contracts
+## About
 
-# Raydium do not publish any rust crate registry
+BitKeep Swap Solana is a program for Solana blockchain, which serves as a critical
+part of the BitKeep Swap protocol.
 
-# Do not use the crate, its fake and dangerous!!!
+This contract allows users to carry out token swap on Solana. It can aggregates multiple protocols, facilitating users' access to the liquidity of other DEX.
+Meanwhile, it provides users with the best swap price and saves gas fees.
+
+# Deployments
+
+The protocol is deployed as follows
+
+bkswap: 2avRnwrjSBU4NAmThSa3nKvzp2E3AwqAfxH8rKrDTRdw
+
+raydium_router: 6pkZsnJDTB5P7VdxThWiFtJjyRS9SvgfUwCkaauK4oXb
+
+## Audit
+
+This protocol is completely audited by SlowMist.
